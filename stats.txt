@@ -1,0 +1,400 @@
+STANMATH SCALAR FUNCTIONS AND TESTS (numbers are SLOC)
+FUN                             PRIM   REV    FWD    TPRIM  TREV   TFWD 
+abs                             9      9      24     26     67     62   
+acos                                   20     16            65     71   
+acosh                           19     22     15     25     54     58   
+as_bool                         11     9             20     22     21   
+asin                                   19     16            66     69   
+asinh                           10     22     16     23     54     53   
+atan                                   18     15            55     53   
+atan2                                  50     29            79     58   
+atanh                           19     20     14     26     53     46   
+bessel_first_kind               14     25     16     17     40     46   
+bessel_second_kind              12     25     16     17     42     47   
+binary_log_loss                 13     31     17     17     87     109  
+binomial_coefficient_log        25            72     35            41   
+boost_fpclassify                       13                               
+boost_isfinite                         13                               
+boost_isnormal                         13                               
+boost_policy                    14                                      
+calculate_chain                        11                   2           
+cbrt                            10     17     13     24     27     59   
+ceil                                   23     14            27     48   
+choose                          24                   37                 
+common_type                     12                                      
+constants                       51                   60                 
+corr_constrain                  20                                      
+corr_free                       14                                      
+corr_transform                                       25                 
+cos                                    17     15            44     62   
+cosh                                   18     15            58     50   
+digamma                         12     18     14     14     29     43   
+distance                        16                   25            42   
+divide                          22                   47                 
+erf                             10     21     17     19     30     55   
+erfc                            10     22     17     20     29     55   
+exp                             9      17     14     8      27     58   
+exp2                            14     19     16     28     31     63   
+expm1                           10     17     15     23     28     59   
+F32                             42                   32            23   
+fabs                                   19     25            46     69   
+falling_factorial               20     24     17     12     41     37   
+fdim                            19     59     30     21     123    57   
+fill                            11                                      
+floor                                  23     14            27     48   
+fma                             13     103    53     18     110    63   
+fmax                            18     43     63     30     119    55   
+fmin                            18     43     63     30     119    56   
+fmod                                   60     32            53     47   
+gamma_p                         9      93     55     19     67     55   
+gamma_q                         9      55     69     19     84     52   
+grad_2F1                        58                   111                
+grad_F32                        76                   52                 
+grad_inc_beta                   27     35     31                        
+grad_reg_inc_beta               23                   33            50   
+grad_reg_inc_gamma              67                   51                 
+grad_reg_lower_inc_gamma        81                   9616               
+hypot                           16     34     28     33     53     51   
+ibeta                           15     181           58     200         
+identity_constrain              15                                      
+identity_free                   11                                      
+identity_transform                                   24                 
+if_else                         13     23            41     51          
+inc_beta                        12     37     32                        
+inc_beta_dda                    50                   55                 
+inc_beta_ddb                    44                   54                 
+inc_beta_ddz                    23                   36                 
+int_step                        11                   26     12          
+inv                             8      18     13     16     34     44   
+inv_cloglog                     12     22     14     13     35     50   
+inv_logit                       19     17     16     13     27     49   
+inv_Phi                         53     23     17     34     71     70   
+inv_sqrt                        12     20     15     18     40     45   
+inv_square                      8      20     14     16     34     40   
+is_inf                          9      11     13     16     16     40   
+is_integer                      12                                      
+is_nan                          9      11     13     16     16     40   
+is_nonpositive_integer          12                                      
+is_uninitialized                11     10            17     13          
+lb_constrain                    28                                      
+lb_free                         21                                      
+lb_transform                                         35                 
+lbeta                           15            29     17            50   
+ldexp                           12                                      
+lgamma                          13     21     14     12     28     45   
+lmgamma                         19     28     21     21     28     43   
+locscale_constrain              41                                      
+locscale_free                   25                                      
+locscale_transform                                   63                 
+log                             9      17     17     8      40     59   
+log10                                  20     18            27     60   
+log1m                           15     17     14     20     36     55   
+log1m_exp                       21     18     19     23     53     55   
+log1m_inv_logit                 18     15     15     16     42     51   
+log1p                           13     17     13     38     40     57   
+log1p_exp                       15     18     14     13     50     52   
+log2                            15     18     17     18     31     60   
+log_diff_exp                    19     43     34     34     161    55   
+log_falling_factorial           20     62     29     16     80     57   
+log_inv_logit                   19     15     14     16     42     51   
+log_inv_logit_diff              15     50     29     15     13     30   
+log_mix                         19     68     161    27     236    168  
+log_modified_bessel_first_kind  159                  60                 
+log_rising_factorial            20     46     25     15     81     58   
+log_sum_exp                     18     42     26     52     160    48   
+logical_and                     11                   21                 
+logical_eq                      11                   20                 
+logical_gt                      11                   21                 
+logical_gte                     11                   21                 
+logical_lt                      11                   21                 
+logical_lte                     11                   21                 
+logical_negation                11                   17                 
+logical_neq                     11                   20                 
+logical_or                      11                   22                 
+logit                           13     14     18     13     41     53   
+lub_constrain                   62                                      
+lub_free                        22                                      
+lub_transform                                        85                 
+modified_bessel_first_kind      14     25     16     18     38     49   
+modified_bessel_second_kind     12     25     16     16     37     45   
+modulus                         16                   37                 
+multiply_log                    16     65     25     23     107    56   
+owens_t                         9      57     43     16     64     45   
+Phi                             22     21     17     115    147    164  
+Phi_approx                      14     17     15     13     50     54   
+positive_constrain              19                                      
+positive_free                   15                                      
+positive_transform                                   25                 
+pow                                    83     45            87     52   
+primitive_value                 20     10     13     20     11     36   
+prob_constrain                  21                                      
+prob_free                       15                                      
+prob_transform                                       38                 
+promote_elements                15                   28                 
+promote_scalar                  21                   15     8           
+promote_scalar_type             11                   8                  
+rising_factorial                20     24     16     12     42     37   
+round                           10     22     17     17     54     53   
+sign                            11                   17     17     32   
+sin                                    17     14            44     60   
+sinh                                   17     14            57     53   
+size_zero                       17                   16                 
+sqrt                            9      17     14     9      54     62   
+square                          8      16     13     16     28     61   
+squared_distance                16     40            25     77          
+step                            11     11            20     40          
+tan                                    17     14            46     60   
+tanh                                   20     14            57     51   
+tgamma                          9      18     16     19     28     24   
+to_fvar                                       16                        
+to_var                                 10                               
+trigamma                        45     12     15     16     27     21   
+trunc                           10     22     13     17     37     28   
+ub_constrain                    28                                      
+ub_free                         21                                      
+ub_transform                                         38                 
+value_of                        16     9      12     14     11     22   
+value_of_rec                    15     10     13     8      8      13   
+
+STANMATH MAT FUNCTIONS AND TESTS (numbers are SLOC)
+FUN                             PRIM   REV    FWD    TPRIM  TREV   TFWD 
+accumulator                     46                   69     108    124  
+acos                            20                                      
+acosh                           19                                      
+add                             41                   97     178         
+add_diag                        28                   81     172         
+append_array                    52                   60                 
+append_col                      87                   148    171    90   
+append_row                      88                   148    170    90   
+array_builder                                        30            97   
+asin                            20                                      
+asinh                           19                                      
+assign                          68                   315    103    454  
+atan                            20                                      
+atanh                           19                                      
+autocorrelation                 89                   53                 
+autocovariance                  41                   44                 
+block                           20                   40            105  
+cbrt                            19                                      
+ceil                            20                                      
+chol2inv                        40                   42                 
+cholesky_corr_constrain         78                                      
+cholesky_corr_free              33                                      
+cholesky_corr_transform                              65     57          
+cholesky_decompose              21     199           28     365    94   
+cholesky_factor_constrain       54                                      
+cholesky_factor_free            30                                      
+cholesky_factor_transform                            72                 
+col                             15                   19     40     147  
+cols                            12                   26     31     120  
+columns_dot_product             21     32     53     2             401  
+columns_dot_self                13     23     22     19            68   
+common_type                     14                                      
+containers_conversion                                239                
+corr_matrix_constrain           45                                      
+corr_matrix_free                37                                      
+corr_matrix_transform                                71     45          
+cos                             20                                      
+cosh                            20                                      
+cov_exp_quad                    50     144           1419   1143        
+cov_matrix_constrain            61                                      
+cov_matrix_constrain_lkj        37                                      
+cov_matrix_free                 34                                      
+cov_matrix_free_lkj             37                                      
+cov_matrix_transform                                 78     45          
+crossprod                       12     12     20     25     35     294  
+csr_extract_u                   23                   55                 
+csr_extract_v                   23                   64                 
+csr_extract_w                   21                   61                 
+csr_matrix_times_vector         48                   115                
+csr_to_dense_matrix             38                   91                 
+csr_u_to_z                      16                   26                 
+cumulative_sum                  29                   39     59     104  
+determinant                     14     65     35     14     64     36   
+diag_matrix                     13                   7      25     53   
+diag_post_multiply              27                   35     146    360  
+diag_pre_multiply               27                   35     146    230  
+diagonal                        13                   7             53   
+digamma                         21                                      
+dims                            8                    52            98   
+distance                        21                   75     185    195  
+divide                          16     18     58     11     205         
+divide_columns                  33                   37                 
+dot_product                     30     202    131    2      248    1115 
+dot_product2                                                854         
+dot_self                        14     69     18     38     61     48   
+Eigen                           6                                       
+Eigen_NumTraits                        260    34            3      10   
+eigenvalues_sym                 20                   10     31     46   
+eigenvectors_sym                20                   13            60   
+elt_divide                      36                   113    202    394  
+elt_multiply                    21                   59     168    400  
+erf                             19                                      
+erfc                            19                                      
+exp                             21                                      
+exp2                            19                                      
+expm1                           19                                      
+fabs                            20                                      
+factor_cov_matrix               33                                      
+factor_cov_matrix_transform                          21                 
+factor_U                        39                                      
+fill                            12                   46     47     90   
+floor                           20                                      
+get_base1                       100                  126           264  
+get_base1_lhs                   98                   143           275  
+get_lp                          14                   12     24          
+gp_dot_prod_cov                 139                  203                
+gp_exp_quad_cov                 147    187           1456   1163        
+gp_matern52_cov                 175                  444    70          
+gp_periodic_cov                 87     227           971    2451        
+grad                                   17                               
+head                            35                   92            189  
+initialize                      30                   47     24     90   
+initialize_variable                    24                   44          
+inv                             19                                      
+inv_cloglog                     20                                      
+inv_logit                       20                                      
+inv_Phi                         20                                      
+inv_sqrt                        20                                      
+inv_square                      20                                      
+inverse                         14            33     8      61     54   
+inverse_spd                     32                   13     73     73   
+LDLT_alloc                             33                   58          
+LDLT_factor                     67     52            2      123    2    
+lgamma                          19                                      
+lkj_cov_matrix_transform                             31                 
+log                             21                                      
+log10                           20                                      
+log1m                           19                                      
+log1m_exp                       20                                      
+log1m_inv_logit                 20                                      
+log1p                           19                                      
+log1p_exp                       20                                      
+log2                            19                                      
+log_determinant                 14     31     21     2      65     47   
+log_determinant_ldlt            12     34            18     56     41   
+log_determinant_spd             16     46                   67     47   
+log_inv_logit                   20                                      
+log_mix                         167                  120    159    247  
+log_softmax                     25     75     40     32     95     78   
+log_sum_exp                     27     44     29     29     57     77   
+logit                           19                                      
+make_nu                         29                                      
+matrix_exp                      37                   87     154    146  
+matrix_exp_2x2                  28                   16     25     69   
+matrix_exp_action_handler       81                          109         
+matrix_exp_multiply             18     25            48     204         
+matrix_exp_pade                 20                   64     133    123  
+max                             37                   79     77     176  
+mdivide_left                    26     282    90     13     139    273  
+mdivide_left_ldlt               22     213    28     15     303    397  
+mdivide_left_spd                30     255           13     139    365  
+mdivide_left_tri                36     319           26     295    855  
+mdivide_left_tri_low            27            105    2      115    486  
+mdivide_right                   29            91     28     37     273  
+mdivide_right_ldlt              28                   15     209    395  
+mdivide_right_spd               26                   13            361  
+mdivide_right_tri               36                   19            392  
+mdivide_right_tri_low           20            100    2             493  
+mean                            26                   60     99     230  
+min                             36                   79     81     181  
+minus                           11                   10     85     206  
+misc                                                        89          
+multiply                        37     356    124    114    1545        
+multiply_lower_tri_self_transpose  29     44     26     56     198    134  
+num_elements                    23                   104                
+operator_addition                                                  629  
+operator_division                                                  566  
+operator_multiplication                                            1020 
+operator_subtraction                                               647  
+ordered_constrain               36     52                               
+ordered_free                    28                                      
+ordered_transform                                    53     86          
+Phi                             19                                      
+Phi_approx                      20                                      
+positive_ordered_constrain      36     50                               
+positive_ordered_free           29                                      
+positive_ordered_transform                           53     85          
+prod                            24                   45     38     177  
+promote_common                  13                          118         
+promote_double_to               59                   131    144         
+promote_elements                26                   24                 
+promote_scalar                  43                   151                
+promote_scalar_type             29                   37                 
+qr_Q                            26            26     12     18     70   
+qr_R                            31            29     32     26     64   
+qr_thin_Q                       26                   12     18     62   
+qr_thin_R                       29                   41     26     58   
+quad_form                       30     125           83     535    583  
+quad_form_diag                  36                   41     151    439  
+quad_form_sym                   31     44     47                        
+rank                            19                   71            78   
+read_corr_L                     50                                      
+read_corr_matrix                23                                      
+read_cov_L                      17                                      
+read_cov_matrix                 28                                      
+rep_matrix                      35                   41            216  
+rep_row_vector                  18                   9             56   
+rep_vector                      18                   10            56   
+resize                          31                   120           228  
+round                           20                                      
+row                             15                   19     42     104  
+rows                            12                   26     31     58   
+rows_dot_product                21     32     53     2             388  
+rows_dot_self                   12            22     18            58   
+scale_matrix_exp_multiply       19     25            50     166         
+sd                              28     59            44     154    228  
+segment                         49                   92            183  
+simplex_constrain               55     57                               
+simplex_free                    30                                      
+simplex_transform                                    50     129         
+sin                             20                                      
+singular_values                 14                   8             32   
+sinh                            20                                      
+size                            12                   31            57   
+softmax                         26     48     40     30     67     81   
+sort                                                 96     171    310  
+sort_asc                        16                                      
+sort_desc                       18                                      
+sort_indices                    38                   75     137    263  
+sort_indices_asc                16                                      
+sort_indices_desc               16                                      
+sqrt                            20                                      
+square                          19                                      
+squared_distance                27     122    71     75     188    195  
+stan_print                      60     10                   3      80   
+stored_gradient_vari                                        75          
+sub_col                         20                   53            113  
+sub_row                         20                   53            113  
+subtract                        41                   97     207         
+sum                             14     38     22     56     88     165  
+tail                            38                   92            189  
+tan                             20                                      
+tanh                            20                                      
+tcrossprod                      17     39     20     25     177    236  
+tgamma                          20                                      
+to_array_1d                     36                                      
+to_array_2d                     22                                      
+to_fvar                                       36                   200  
+to_matrix                       104                  191                
+to_row_vector                   28                                      
+to_var                                 34                   76          
+to_vector                       28                                      
+trace                           16                   13     23     30   
+trace_gen_inv_quad_form_ldlt    30     31            16     750    359  
+trace_gen_quad_form             22     106    23     16     345    89   
+trace_inv_quad_form_ldlt        24     140           14     294    337  
+trace_quad_form                 17     85     36     14     136    127  
+transpose                       12                   11     67     134  
+trigamma                        20                                      
+trunc                           19                                      
+typedefs                        14     13     18     2      3      2    
+unit_vector_constrain           34     76     48            66     71   
+unit_vector_free                17                                      
+unit_vector_transform                                60     48          
+value_of                        24                   77     36     38   
+value_of_rec                    23                   20     32     35   
+variable_adapter                89                   83                 
+variance                        40     49            44     148    263  
+welford_covar_estimator         37                   52                 
+welford_var_estimator           37                   51                 

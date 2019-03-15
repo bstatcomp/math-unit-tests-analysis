@@ -181,7 +181,7 @@ scalarTests["all"]=list(set().union(scalarTests["prim"],scalarTests["rev"],scala
 #print('Missing Fwd scalar function tests:\n')
 #print(*missingRev, sep='\n')
 
-print("STANMATH SCALAR FUNCTIONS AND TESTS")
+print("STANMATH SCALAR FUNCTIONS AND TESTS (numbers are SLOC)")
 line='FUN PRIM REV FWD TPRIM TREV TFWD'.split()
 print(f'{line[0]:<30}  {line[1]:<5}  {line[2]:<5}  {line[3]:<5}  {line[4]:<5}  {line[5]:<5}  {line[6]:<5}')
 listF=list(set().union(scalarTests["all"],scalarFun["all"]))
@@ -229,7 +229,7 @@ for filename in glob.glob(fwdMatDirT+'/*.cpp'):
 
 matTests["all"]=list(set().union(matTests["prim"],matTests["rev"],matTests["fwd"]))
 
-print("\nSTANMATH MAT FUNCTIONS AND TESTS")
+print("\nSTANMATH MAT FUNCTIONS AND TESTS (numbers are SLOC)")
 line='FUN PRIM REV FWD TPRIM TREV TFWD'.split()
 print(f'{line[0]:<30}  {line[1]:<5}  {line[2]:<5}  {line[3]:<5}  {line[4]:<5}  {line[5]:<5}  {line[6]:<5}')
 listF=list(set().union(matTests["all"],matFun["all"]))
